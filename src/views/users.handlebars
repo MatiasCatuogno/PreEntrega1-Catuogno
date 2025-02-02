@@ -1,0 +1,21 @@
+<h1>Usuarios</h1>
+<ul>
+ {{#each users}}
+  <li>
+   <p>Nombre: {{this.first_name}}</p>
+  </li>
+  <li>
+   <p>Apellido: {{this.last_name}}</p>
+  </li>
+  <li>
+   <p>Edad: {{this.age}}</p>
+  </li>
+  <li>
+   <p>Email: {{{this.email}}}</p>
+  </li>
+  <li>
+   <p>Número: {{this.number}}</p>
+  </li>
+  <img src="/img/{{this.profile}}" alt="this.profile" width="1280" height="720"/>
+ {{/each}}
+</ul>
